@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To be instructor</title>
+    <link rel="stylesheet" href="ToBeInstructor.css">
+    <script type="text/javascript"> </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <form>
+            <button type="button" id="log_out" onclick="GoToLogout()">Log Out</button>
+            <a href="#" class="logo"> <span class="logo"><i class="fa-solid  fa-graduation-cap"></i></span></a>
+            <span id="website-name">Intelligence</span>
+
+        </form>
+        <nav>
+            <b> <a onclick= GoToHomePage()>Home</a></b>
+            <b><a onclick= GoToCoursesPage()>Courses</a></b>
+            <b><a href="#footer" id="contact">Contact</a></b>
+         </nav> 
+    </header>
+    <div class="container">
+        <div class="image">
+            <img src="udemyimages/photo.jpg" alt="Be an instructor" id="first">
+        </div>
+        <div class="registeration">
+            <h1>Share your experience <br> with us as a teacher</h1>
+            <input id="startButton" class="startButton" type="button" value="Get started">
+        </div>
+    </div>
+    <!-- hidden form -->
+    <div id="registrationForm" class="hidden">
+        <input type="text" id="name" placeholder="Name" required>
+        <input type="text" id="course" placeholder="Course" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="tel" id="phone" placeholder="Mobile Phone" required>
+        <button id="submitBtn">Submit</button>
+    </div>
+    <h2 class="next">Endless benefits await when you start teaching with us</h2>
+    <div class="reasons" id="reason">
+        <div class="reasonOne">
+            <img src="udemyimages/first reason.jpg" alt="resaon one">
+            <p class="bold">Teach your way</p>
+            <p>Publish the course you want, in the way you
+                want, and always have control of your own
+                content.</p>
+        </div>
+        <div class="reasonTwo" id="reason">
+            <img src="udemyimages/second reason.jpg">
+            <p class="bold">Inspire learners</p>
+            <p>Teach what you know and help learners explore
+                their interests, gain new skills, and advance
+                their careers.</p>
+        </div>
+        <div class="reasonThree" id="reason">
+            <img src="udemyimages/Third reason.jpg">
+            <p class="bold">Get rewarded</p>
+            <p>Expand your professional network, build your
+                expertise, and earn money on each paid
+                enrollment.</p>
+        </div>
+    </div>
+
+    <script src="ToBeInstructor.js"></script>
+
+    <!-- <footer>
+        <div class="footer-content">
+            <div class="social-media">
+                <a href="https://www.facebook.com" target="_blank" class="social-icon">
+                    <img src="udemyimages/Facebook-icon.png" alt="Facebook">
+                </a>
+                <a href="https://www.instagram.com" target="_blank" class="social-icon">
+                    <img src="udemyimages/Instagram-icon.png" alt="Instagram">
+                </a>
+
+            </div>
+            <p class="copyright">&copy; 2024 Inteligence . All rights reserved.</p>
+
+        </div>
+    </footer> -->
+    <footer id="footer">
+        <p class="copy-writing">
+            <i class="fa-solid  fa-graduation-cap"></i> Intelligence &copy; 2024
+        </p>
+        <div class="contacts">
+            <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.twitter.com/"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+
+    </footer>
+
+
+</body>
+
+</html>

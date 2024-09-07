@@ -1,0 +1,275 @@
+ body {
+     font-family: 'Arial', sans-serif;
+     background-color: #f5f5f5;
+     /* Soft, neutral background */
+     margin: 0;
+     padding: 0;
+     color: #2c3e50;
+ }
+
+ .container {
+     width: 80%;
+     margin: auto;
+     overflow: hidden;
+     padding-top: 50px;
+ }
+
+ h1 {
+     text-align: center;
+     background: linear-gradient(90deg, #492599, #4B21AC, #4C1FB0);
+     /* Gradient for the header */
+     color: #ecf0f1;
+     padding: 20px;
+     font-size: 2.5rem;
+     border-radius: 10px;
+     
+ }
+
+ .course {
+     background: #ffffff;
+     /* White background for a clean look */
+     padding: 20px;
+     margin: 20px 0;
+     border-radius: 8px;
+     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+     transition: transform 0.3s ease;
+     position: relative;
+     overflow: hidden;
+     color: #2c3e50;
+     display: flex;
+     align-items: center;
+ }
+
+ .course img {
+     width: 80px;
+     height: 80px;
+     margin-right: 20px;
+     border: 3px solid #7538FF;
+     /* Border around the icon */
+     border-radius: 50%;
+     /* Make the icon border circular */
+     padding: 5px;
+     background-color: #f7f9fa;
+     /* Light background to make the icon stand out */
+ }
+
+ .course:hover {
+     transform: scale(1.05);
+     background-color: #f0f0f0;
+     /* Slight color change on hover */
+ }
+
+ .course h2 {
+     color: #4B21AC;
+     /* A strong purple for course titles */
+     font-size: 1.8rem;
+ }
+
+ .course p {
+     color: #34495e;
+     /* Slightly darker text for contrast */
+     font-size: 1rem;
+     margin-bottom: 20px;
+ }
+
+ button {
+     background-color: #7538FF;
+     /* Button color */
+     color: #fff;
+     padding: 10px 15px;
+     border: none;
+     border-radius: 5px;
+     cursor: pointer;
+     position: relative;
+     overflow: hidden;
+     transition: background-color 0.3s;
+     font-size: 1rem;
+ }
+
+ button:hover {
+     background-color: #4B21AC;
+     /* Darker purple on hover */
+ }
+
+ button:active::after {
+     content: '';
+     position: absolute;
+     width: 300%;
+     height: 300%;
+     background: rgba(255, 255, 255, 0.3);
+     border-radius: 50%;
+     transform: translate(-50%, -50%);
+     animation: ripple 0.6s linear;
+ }
+
+ @keyframes ripple {
+     from {
+         transform: translate(-50%, -50%) scale(0);
+         opacity: 1;
+     }
+
+     to {
+         transform: translate(-50%, -50%) scale(1);
+         opacity: 0;
+     }
+ }
+
+ .fun-fact {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background: rgba(0, 0, 0, 0.8);
+     color: #fff;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-size: 1.2rem;
+     border-radius: 8px;
+     opacity: 0;
+     pointer-events: none;
+     transition: opacity 0.3s ease;
+ }
+
+ .show-fact {
+     opacity: 1;
+     pointer-events: all;
+ }
+
+ .footer {
+     text-align: center;
+     background-color: #f7f9fa;
+     /* Footer background color */
+     padding: 10px;
+     color: #4B21AC;
+     /* Footer text color to match theme */
+     margin-top: 50px;
+     border-top: 2px solid #4D1EB7;
+     /* Accent line */
+ }
+
+ .logo {
+
+     width: 70px;
+     height: 90px;
+     margin-right: 15px;
+     transition: transform 0.3s ease;
+ }
+
+ .logo:hover {
+     transform: scale(1.1);
+     /* Slightly enlarges the logo on hover */
+ }
+
+ @media (max-width: 600px) {
+
+     /* Responsive styling for smaller screens */
+     .logo {
+         width: 40px;
+         height: 40px;
+     }
+
+     .website-name {
+         font-size: 20px;
+     }
+ }
+
+ #website-name {
+     color: #d1d7dc;
+     font-family: 'Georgia', serif;
+     font-size: 36px;
+     letter-spacing: 2px;
+     letter-spacing: 1px;
+     margin: 0;
+
+ }
+
+ header {
+     width: 100%;
+     height: 60px;
+     position: relative;
+     background: linear-gradient(90deg, #492599, #4B21AC, #4C1FB0);
+     top: 0;
+   
+ }
+
+ .logo {
+     text-decoration: none;
+     margin-right: auto;
+     font-weight: bolder;
+
+     line-height: 2;
+
+     i {
+         color: #ffffff;
+         margin-right: auto;
+     }
+ }
+
+ * {
+     /* box-sizing: border-box; */
+     margin: 0;
+     padding: 0;
+ }
+
+ .fa-graduation-cap {
+     font-size: 1.4rem;
+ }
+
+ #log_out {
+    position: absolute;
+    left: 85%;
+    top: 20%;
+    width: 8%;
+    height: 50%;
+    z-index: 2;
+    cursor: pointer;
+    background-color:#e5dbfd ;
+    border-radius: 10px;
+    border: #7538FF;
+
+}
+nav{
+    position: absolute;
+    color: #ffffff;
+    font-size: larger;
+    top: 33%;
+    left: 30%;
+    width: 60%;
+}
+nav a{
+     padding-right: 10%;
+     cursor: pointer;
+     text-decoration: none;
+     color: #ffffff;
+     font-size: 120%;
+     
+}
+#contact{
+    text-decoration: none;
+    font-size: 120%;
+}
+
+#footer{
+    float: left;
+    width: 100%;
+    height: 60px;
+    background-color:#f7f9fa;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    
+}
+
+#footer .copy-writing{
+    text-align: right;
+    color: #5022c3;
+    cursor: pointer;
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin-left: 10px;
+    bottom: 0;
+}

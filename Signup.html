@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Course Website</title>
+    <meta name="description" content="This is our Course Website" />
+    <link rel="stylesheet" type="text/css" href="Signup.css">
+    <script src="Signup.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
+
+</head>
+
+<body>
+
+    <header>
+        <form>
+            <a href="#" class="logo"> <span class="logo"><i class="fa-solid  fa-graduation-cap"></i></span></a>
+            <span id="website-name">Intelligence</span>
+
+        </form>
+    </header>
+
+    <div class="signup">
+        <img src="udemyimages/WhatsApp Image 2024-08-13 at 23.16.54_e6652d39.jpg" length="100" width="600"
+            alt="Logo Testing">
+        <form id="inputForm">
+            <h2>Sign up and start learning</h2>
+            <hr>
+            <div>
+                <div class="inputField">
+                    <input type="text" id="name" name="name" placeholder="Full Name" required>
+                    <i class='bx bxs-user'></i>
+                    <div id="nameError" class="error"></div>
+                </div>
+                <br>
+                <div class="inputField">
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                    <i class='bx bxs-envelope'></i>
+                    <div id="emailError" class="error"></div>
+                </div>
+                <br>
+                <div class="inputField">
+                    <input type="password" id="pass" name="pass" placeholder="Password" required>
+                    <i class='bx bxs-lock-alt'></i>
+                    <div id="passError" class="error"></div>
+                </div>
+                <br>
+                <div class="inputField">
+                    <input type="password" id="confpass" name="confpass" placeholder="Confirm Password" required>
+                    <i class='bx bxs-lock-alt'></i>
+                    <div id="passConfError" class="error"></div>
+                </div>
+            </div>
+            <div>
+                <input type="checkbox" id="extra" name="extra" required>
+                <label for="extra">you agree to our Terms of Use and Privacy Policy.</label>
+            </div>
+            <br>
+            <div>
+                <input type="submit" id="sub" value="Sign Up">
+            </div>
+            <hr>
+            <br>
+            <p><b>Already have an account?</b>
+                <a href="login.html">Log in</a>
+            </p>
+        </form>
+    </div>
+    <br>
+    <footer>
+        <p class="copy-writing">
+            <i class="fa-solid  fa-graduation-cap"></i> Intelligence &copy; 2024
+        </p>
+        <div class="contacts">
+            <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.twitter.com/"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

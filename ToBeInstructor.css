@@ -1,0 +1,303 @@
+
+
+
+.after {
+    /* background-color:blue ; */
+    height: 200px;
+}
+
+.write {
+    font-size: larger;
+    width: fit-content;
+    white-space: pre;
+}
+
+.container {
+    /* background: red;
+display: flex;
+ flex-wrap: wrap; */
+    position: relative;
+}
+
+.registeration {
+    /* background-color: bisque; */
+    position: absolute;
+    bottom: 35%;
+    left: 15%;
+}
+
+.next {
+    text-align: center;
+    font-size: 5vh;
+}
+
+#first {
+    width: 100%;
+}
+
+@media (max-width: 800px) {
+    .registeration {
+        position: static;
+        margin-top: 20px;
+        left: auto;
+        bottom: auto;
+    }
+
+    .reasons {
+        display: block;
+    }
+}
+
+.reasons {
+    display: flex;
+    /* flex-direction: raw; */
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    padding: 10px;
+}
+
+#reason p {
+    max-width: 400px;
+    text-align: center;
+    white-space: pre;
+}
+
+#reason p.bold {
+    font-size: 3vh;
+    font-weight: bolder;
+}
+
+
+.startButton {
+    color: white;
+    font-size: medium;
+    background-color: #310055;
+    width: 300px;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 4px;
+}
+
+.startButton:hover {
+    background-color: #dac3e8;
+}
+
+.hidden {
+    display: none;
+}
+
+#registrationForm {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    max-width: 600px;
+    margin: auto;
+}
+
+#registrationForm input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
+}
+
+#registrationForm button {
+    width: 100%;
+    padding: 10px;
+    background-color: #310055;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: medium;
+    border-radius: 4px;
+}
+
+#registrationForm button:hover {
+    background-color: #dac3e8;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.1);
+    /* text-align: center; */
+    width: 100%;
+}
+
+/* .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.social-icon {
+    display: inline-block;
+    margin: 0 10px;
+
+}
+
+.social-icon img {
+    width: 24px;
+    height: 24px;
+}
+
+.copyright {
+    font-size: 14px;
+    margin: 0;
+    color: #4D1EB7;
+} */
+
+#footer{
+    float: left;
+    width: 100%;
+    height: 60px;
+    background-color:#f7f9fa;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    
+}
+
+#footer .copy-writing{
+    text-align: right;
+    color: #5022c3;
+    cursor: pointer;
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin-left: 10px;
+}
+
+
+h1 {
+    font-size: 6vh;
+}
+
+.logo {
+
+    width: 70px;
+    height: 90px;
+    margin-right: 15px;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+    /* Slightly enlarges the logo on hover */
+}
+
+@media (max-width: 600px) {
+
+    /* Responsive styling for smaller screens */
+    .logo {
+        width: 40px;
+        height: 40px;
+    }
+
+    .website-name {
+        font-size: 20px;
+    }
+}
+
+#website-name {
+    color: #d1d7dc;
+    font-family: 'Georgia', serif;
+    font-size: 36px;
+    letter-spacing: 2px;
+    letter-spacing: 1px;
+    margin: 0;
+
+}
+
+header {
+    width: 100%;
+    height: 60px;
+    position: relative;
+    background-color: #2c1046;
+    /* position: sticky; */
+    top: 0;
+
+}
+
+nav{
+    position: absolute;
+    color: #ffffff;
+    font-size: larger;
+    top: 30%;
+    left: 30%;
+    width: 40%;
+}
+nav a{
+     padding-right: 10%;
+     cursor: pointer;
+     text-decoration: none;
+     color: #ffffff;
+     font-size: 120%;
+     
+}
+
+#contact{
+    text-decoration: none;
+    font-size: 120%;
+}
+
+
+.logo {
+    text-decoration: none;
+    margin-right: auto;
+    font-weight: bolder;
+
+    line-height: 2;
+
+    i {
+        color: #ffffff;
+        margin-right: auto;
+    }
+}
+
+* {
+    /* box-sizing: border-box; */
+    margin: 0;
+    padding: 0;
+}
+
+.fa-graduation-cap {
+    font-size: 1.4rem;
+}
+
+a:link {
+
+
+    line-height: 1.4;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: #5022c3;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+    #log_out {
+        position: absolute;
+        left: 85%;
+        top: 20%;
+        width: 8%;
+        height: 50%;
+        z-index: 2;
+        cursor: pointer;
+        background-color:#d4cde6 ;
+        border-radius: 10px;
+        border: #7538FF;
+    
+    }
+    #log_out:hover{
+        background-color:#543d87;
+    }

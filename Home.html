@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="Home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <link rel="stylesheet" src="Home.js">
+
+</head>
+
+<body>
+
+    <header>
+
+            <button type="button" id="log_out" onclick="GoToLogout()">Log Out</button>
+            <a href="#" class="logo"> <span class="logo"><i class="fa-solid  fa-graduation-cap"></i></span></a>
+            <span id="website-name">Intelligence</span>
+        <nav>
+            <b><a onclick= GoToHomePage()>Home</a></b>
+            <b><a onclick= GoToCoursesPage()>Courses</a></b>
+            <b><a href="#footer" id="contact">Contact</a></b>
+        </nav>
+    </header>
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <img src="udemyimages/06.png"
+                style="width:100%">
+            <div class="text">Reach Your Goal with us</div>
+        </div>
+        <div class="mySlides fade">
+            <img src="udemyimages/17.png"
+                style="width:100%">
+            <div class="text">To be intelligent</div>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="udemyimages/05.png" style="width:100%">
+            <div class="text">choose the best</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+
+    </div>
+    <br>
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[slideIndex - 1].style.display = "block";
+        }
+    </script>
+
+    <div class="partners" data-purpose="partners-banner">
+        <div class="ud-container">
+            <div class="logged-out-home-page--partners-banner-wrapper--vmsxm">
+            <div class="partners-banner-module--wrapper--T3VMa">
+                <div class="partners-banner-module--content--5NknS">
+        <h2 class="partners-heading">Trusted by over 15,000 companies and millions of learners around the world</h2>
+            <ul class="ud-unstyled-list partner-logos-module--list--l2SC7">
+            <li class="partner-logos-module--item--M8vYZ">
+            <img src="https://cms-images.udemycdn.com/content/tqevknj7om/svg/volkswagen_logo.svg?position=c&amp;quality=80&amp;x.app=portals" alt="Volkswagen logo gray and white logo" loading="lazy">
+            </li>
+             <li class="partner-logos-module--item--M8vYZ">
+  <img src="https://cms-images.udemycdn.com/content/2gevcc0kxt/svg/samsung_logo.svg?position=c&amp;quality=80&amp;x.app=portals" alt="Samsung logo gray and white logo" loading="lazy"></li>
+  <li class="partner-logos-module--item--M8vYZ"><img src="https://cms-images.udemycdn.com/content/mueb2ve09x/svg/cisco_logo.svg?position=c&amp;quality=80&amp;x.app=portals" alt="Cisco logo gray and white logo" loading="lazy"></li><li class="partner-logos-module--item--M8vYZ"><img src="https://cms-images.udemycdn.com/content/luqe0d6mx2/svg/hewlett_packard_enterprise_logo.svg?position=c&amp;quality=80&amp;x.app=portals" alt="Hewlett Packard logo gray and white logo" loading="lazy"></li><li class="partner-logos-module--item--M8vYZ"><img src="https://cms-images.udemycdn.com/content/siaewwmkch/svg/citi_logo.svg?position=c&amp;quality=80&amp;x.app=portals" alt="Citi logo gray and white logo" loading="lazy"></li><li class="partner-logos-module--item--M8vYZ"><img src="https://cms-images.udemycdn.com/content/swmv0okrlh/svg/ericsson_logo.svg?position=c&amp;quality=80&amp;x.app=portals" alt="Ericsson logo gray and white logo" loading="lazy">
+            </li>
+             </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+                     
+    <div id="view">
+
+        <div class="viewing">
+            <h2 id="Learners_are_viewing">Learners are viewing</h2>
+            <div class="content active">
+                <div>
+                    <a class="gotocource" onclick="GoToCoursesPage()">
+                    <img src="udemyimages/python.jpg" >
+                    <h2>Python Course</h2>
+                    <p class="descreption">Dr John Smith Python Developer</p>
+                    <b class="price">250.00$</b>
+                    <b id="bestseller">BestSeller</b>
+                    </a>
+                </div>
+                
+                
+                <div>
+                    <a class="gotocource" onclick="GoToCoursesPage()">
+                    <img src="udemyimages/java.jpg">
+                    <h2>Java Course</h2>
+                    <p class="descreption">Dr John Smith Java Developer</p>
+                    <b class="price">350.00$</b>
+                    </a>
+                </div>
+                <div>
+                    <a class="gotocource" onclick="GoToCoursesPage()">
+                    <img src="udemyimages/c++.jpg">
+                    <h2>C++ Course</h2>
+                    <p class="descreption">Dr John Smith C++ Developer</p>
+                    <b class="price">400.00$</b>
+                    </a>
+                </div>
+            </div>
+            <div class="content">
+                <div>
+                    <a class="gotocource" onclick="GoToCoursesPage()">
+                    <img src="udemyimages/markting.jpg">
+                    <h2>Markting Course</h2>
+                    <p class="descreption">Dr John Smith </p>
+                    <b class="price">230.00$</b>
+                </a>
+                </div>
+                <div>
+                    <a class="gotocource" onclick="GoToCoursesPage()">
+                    <img src="udemyimages/Machine (2).jpg">
+                    <h2>Machine Learning Course</h2>
+                    <p class="descreption">Dr John Smith Developer</p>
+                    <b class="price">150.00$</b>
+                    <b id="bestseller">BestSeller</b>
+                </a>
+                </div>
+                <div>
+                    <a class="gotocource" onclick="GoToCoursesPage()">
+                    <img src="udemyimages/excel.jpg">
+                    <h2>Excel Course</h2>
+                    <p class="descreption">Dr John Smith </p>
+                    <b class="price">440.00$</b>
+                </a>
+                </div>
+           </div>
+
+        </div>
+        <button id="prev2"><i class="fa-solid fa-angle-left"></i></button>
+        <button id="next2"><i class="fa-solid fa-angle-right"></i></button>
+    </div>
+    <script src='Home.js'></script>
+
+    <div class="whychooseus">
+        <h3 class="UpskillyourteamwithUdemyBusiness">Why Choose <span id="website-name" style="animation: normal;">Intellgence</span> Website !</h3>
+        
+                <div class="container">
+                    <ul class="buisiness" >
+                        <li>Unlimited Access to 26,000 Courses,International Courses Collection</li>
+                        <li>Top Certifications in Tech and Buisiness,Global Contests in all Fields</li>
+                        <li>Get 50% Discount all Year,Download Courses,OFFLINE Courses</li>
+                        <li>Shared Courses,Sheduling Courses,Mentors Available 24 hours</li>
+                       <li></li>
+                       <li></li>
+                    </ul>
+                </div>
+    </div>
+    <div class="div-top-categories">
+        <h2 class="top-category"> Top Categories</h2>
+        <div class="top-categories"><img src="udemyimages/lohp-category-development-2x-v2.jpg" alt width="300"
+                height="300">
+            <span class="title-course">Development</span>
+        </div>
+        <div class="top-categories"><img src="udemyimages/lohp-category-photography-2x-v2.jpg" alt width="300"
+                height="300">
+            <span class="title-course">Photography</span>
+        </div>
+
+        <div class="top-categories"><img src="udemyimages/lohp-category-business-2x-v2.jpg" alt width="300"
+                height="300">
+            <span class="title-course">Business</span>
+        </div>
+        <div class="top-categories"><img src="udemyimages/lohp-category-music-2x-v2.jpg" alt width="300" height="300">
+            <span class="title-course">Music</span>
+        </div>
+        <div class="top-categories"><img src="udemyimages/lohp-category-marketing-2x-v2.jpg" alt width="300"
+                height="300">
+            <span class="title-course">Marketing</span>
+        </div>
+
+        <div class="top-categories"><img src="udemyimages/lohp-category-it-and-software-2x-v2.jpg" alt width="300"
+                height="300">
+            <span class="title-course">IT & Software</span>
+        </div>
+        <div class="top-categories"><img src="udemyimages/lohp-category-design-2x-v2.jpg" alt width="300" height="300">
+            <span class="title-course">Design</span>
+        </div>
+        <div class="top-categories"><img src="udemyimages/lohp-category-personal-development-2x-v2.jpg" alt width="300"
+                height="300">
+            <span class="title-course">Leadership</span>
+        </div>
+        <div class="top-categories"><img src="udemyimages/lohp-category-design-2x-v2.jpg" alt width="300" height="300">
+            <span class="title-course">Team Work</span>
+        </div>
+        <div class="top-categories"><img src="udemyimages/lohp-category-personal-development-2x-v2.jpg" alt width="300"
+                height="300">
+            <span class="title-course">Soft Skills</span>
+        </div>
+    </div>
+
+    <h1 class="featured-h1">Featured topics by category</h1>
+    <div class="component-margin logged-out-home-page--background-pale--iEc7U">
+        <section class="sectio-feature-topics">
+          
+            <div class="trending-topics-container-a" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px;">
+                <div class="trending-topics--category---jLi4">
+                    <h3 class="ud-heading-md trending-topics--title--miRM4" data-purpose="category-title">Development</h3>
+                    <div>
+                        <div class="trending-topics--topic--h6Im-">
+                            <div>
+                                <a href="/topic/python/" class="trending-topics--link--zoIGq">JavaScript</a>
+                            </div>
+                            <div class="trending-topics-info" data-purpose="count">3,354,994 learners</div>
+                        </div>
+                        <div class="trending-topics--topic--h6Im-">
+                            <div>
+                                <a href="/topic/web-development/" class="trending-topics--link--zoIGq">Web</a>
+                            </div>
+                            <div class="trending-topics-info" data-purpose="count">1,415,615 learners</div>
+                        </div>
+                        <div class="trending-topics--topic--h6Im-">
+                            <div>
+                                <a href="/topic/machine-learning/" class="trending-topics--link--zoIGq">Ai</a>
+                            </div>
+                            <div class="trending-topics-info" data-purpose="count">9,070,015 learners</div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="trending-topics--category---jLi4">
+                    <h3 class="ud-heading-md trending-topics--title--miRM4" data-purpose="category-title">Business</h3>
+                    <div>
+                        <div class="trending-topics--topic--h6Im-">
+                            <div>
+                                <a href="/topic/financial-analysis/" class="trending-topics--link--zoIGq">Excel</a>
+                            </div>
+                            <div class="trending-topics-info" data-purpose="count">1,195,282 learners</div>
+                        </div>
+                        <div class="trending-topics--topic--h6Im-">
+                            <div>
+                                <a href="/topic/sql/" class="trending-topics--link--zoIGq">SQL</a>
+                            </div>
+                            <div class="trending-topics-info" data-purpose="count">5,977,561 learners</div>
+                        </div>
+                        <div class="trending-topics--topic--h6Im-">
+                            <div>
+                                <a href="/topic/pmp/" class="trending-topics--link--zoIGq">PMP</a>
+                            </div>
+                            <div class="trending-topics-info" data-purpose="count">1,733,398 learners</div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="trending-topics--category---jLi4">
+                    <h3 class="ud-heading-md trending-topics--title--miRM4" data-purpose="category-title">IT</h3>
+                    <div>
+                        <div class="trending-topics--topic--h6Im-">
+                            <div>
+                                <a href="/topic/amazon-aws/" class="trending-topics--link--zoIGq">Cloud</a>
+                            </div>
+                            <div class="trending-topics-info" data-purpose="count">6,123,456 learners</div>
+                        </div>
+                        <div class="trending-topics--topic--h6Im-">
+                            <div>
+                                <a href="/topic/ethical-hacking/" class="trending-topics--link--zoIGq"> Hacking</a>
+                            </div>
+                            <div class="trending-topics-info" data-purpose="count">1,931,066 learners</div>
+                        </div>
+                        <div class="trending-topics--topic--h6Im-">
+                            <div>
+                                <a href="/topic/cyber-security/" class="trending-topics--link--zoIGq">Network</a>
+                            </div>
+                            <div class="trending-topics-info" data-purpose="count">3,998,037 learners</div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="trending-topics--category---jLi4">
+                    <h3 class="ud-heading-md trending-topics--title--miRM4" data-purpose="category-title">Design</h3>
+                    <div>
+                        <div class="trending-topics--topic--h6Im-">
+                            <div>
+                                <a href="/topic/photoshop/" class="trending-topics--link--zoIGq">Photoshop</a>
+                            </div>
+                            <div class="trending-topics-info" data-purpose="count">4,909,736 learners</div>
+                        </div>
+                        <div class="trending-topics--topic--h6Im-">
+                            <div>
+                                <a href="/topic/graphic-design/" class="trending-topics--link--zoIGq">Figma</a>
+                            </div>
+                            <div class="trending-topics-info" data-purpose="count">3,381,052 learners</div>
+                        </div>
+                        <div class="trending-topics--topic--h6Im-">
+                            <div>
+                                <a href="/topic/drawing/" class="trending-topics--link--zoIGq">Drawing</a>
+                            </div>
+                            <div class="trending-topics-info" data-purpose="count">2,410,849 learners</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+
+
+    <div id="instractor">
+        <h1 class ="be-instructor">To Be with Best Team of Instructors</h2>
+        <h4>Become An Instructor</h4>
+        <p>Instructors from around the world teach millions of learners on Udemy. We provide the tools and skills to
+            teach what you love.</p>
+
+        <input type="button" value="Start Teaching" id="instractor_botton" onclick="GoToInstructorPage()">
+        <img src="udemyimages/instructor-2x-v3.jpg" height="300" width="300">
+    </div>
+    
+    <footer id="footer">
+        <p class="copy-writing">
+            <i class="fa-solid  fa-graduation-cap"></i> Intelligence &copy; 2024
+        </p>
+        <div class="contacts">
+            <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.twitter.com/"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+
+    </footer>
+</body>
+</html>

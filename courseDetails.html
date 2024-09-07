@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Details</title>
+    <link rel="stylesheet" type="text/css" href="courseDetails.css">
+    <script src="courseDetails.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <form>
+            <a href="#" class="logo"> <span class="logo"><i class="fa-solid  fa-graduation-cap"></i></span></a>
+            <span id="website-name">Intelligence</span>
+
+        </form>
+    </header>
+    <div class="container">
+        <!-- Course Name -->
+        <h1 id="courseName">Course Name</h1>
+
+        <!-- Course Photo -->
+        <img id="coursePhoto" class="course-photo" src="" alt="Course Photo">
+
+        <!-- Course Details Section -->
+        <div class="course-details">
+            <!-- Container for Instructor, Description, and Price -->
+            <div class="details-column">
+                <p><strong>Instructor: </strong><span id="courseInstructor" class="course-instructor">Instructor
+                        Name</span></p>
+                <p><strong>Course Description: </strong><span id="courseDescription"
+                        class="course-description">Description</span></p>
+                <p><strong>Price: </strong><span id="coursePrice" class="course-price">$0.00</span></p>
+            </div>
+
+            <!-- Buttons for Navigation -->
+            <div class="buttons">
+                <a href="Courses.html" class="back-btn">Back to Courses</a>
+                <!-- Button to go back to the course list -->
+                <button class="buy-btn" onclick="goToCheckout()">Buy Course</button> <!-- Button to go to checkout -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer">
+        &copy; 2024 Intelligence. All rights reserved.
+    </div>
+</body>
+
+</html>
